@@ -53,6 +53,30 @@ namespace baobao
             director.Resume();
         }
 
+        public void SetTimeUpdateMode(DirectorUpdateMode mode)
+        {
+            director.timeUpdateMode = mode;
+        }
+
+        public void Evaluate()
+        {
+            director.Evaluate();
+        }
+
+        public void SetTime(float time, bool withEvaluate = false)
+        {
+            director.time = (double) time;
+            if (withEvaluate)
+                Evaluate();
+        }
+
+        public float GetFPS()
+        {
+            var t = (TimelineAsset) director.playableAsset;
+            return t.editorSettings.fps;
+        }
+
+
         public void SetPlayable(TimelineAsset asset)
         {
             director.playableAsset = asset;
