@@ -160,8 +160,7 @@ namespace baobao
         /// </summary>
         T GetClip<T>(string trackName, string clipName) where T : PlayableAsset
         {
-            var tracks = GetTrackList();
-            TrackAsset track = _tracks.FirstOrDefault(x => x.name == trackName);
+            TrackAsset track = GetTrackList().FirstOrDefault(x => x.name == trackName);
             if (track != null)
             {
                 var clips = track.GetClips();
@@ -173,6 +172,11 @@ namespace baobao
             }
 
             return null;
+        }
+
+        public TrackAsset GetTrack(string trackName)
+        {
+            return GetTrackList().FirstOrDefault(x => x.name == trackName);
         }
 
         /// <summary>
