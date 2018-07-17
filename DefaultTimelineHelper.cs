@@ -175,6 +175,11 @@ namespace baobao
             return null;
         }
 
+        public TrackAsset GetTrack(string trackName)
+        {
+            return GetTrackList().FirstOrDefault(x => x.name == trackName);
+        }
+
         /// <summary>
         /// TrackListの取得
         /// </summary>
