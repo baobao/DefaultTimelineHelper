@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
-namespace baobao
+namespace info.shibuya24
 {
     /// <summary>
     /// ビルトインで用意されているTrackとClipに対応したタイムラインヘルパークラス
