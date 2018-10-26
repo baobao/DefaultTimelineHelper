@@ -1,0 +1,14 @@
+{
+  "name": "info.shibua24.default-timeline-helper",
+  "displayName": "DefaultTimelineHelper",
+  "version": "0.0.1",
+  "unity": "2018.3",
+  "description": "Unity Timeline Helper.",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/baobao/DefaultTimelineHelper.git",
+    "revision": "9c7697ef520a7b7b20a356284701b62b5fa209ce"
+  }
+}
+
